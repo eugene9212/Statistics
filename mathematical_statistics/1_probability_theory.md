@@ -35,6 +35,7 @@ Consider measuring the lifespan of a machine. The observed value can be any non-
 - Event: "The machine works for at least 20 hours" is $A = \\{x \mid x \geq 20\\}$.  
 This type of example is often referred to as a *continuous sample space* (specifically, an example from lifetime or survival analysis) in probability theory.
 
+### Definitions
 #### Definition 1.1 intersection, union
 
 Let $A$ and $B$ be events in the same sample space. We define:
@@ -42,9 +43,14 @@ Let $A$ and $B$ be events in the same sample space. We define:
 - **Union ($A \cup B$):** the event that at least one of $A$ or $B$ occurs.
 
 #### Definition 1.2 mutually exclusive
+If two events $A$ and $B$ are defined on the same sample space $S$ and have no outcomes in common, that is, $A \cap B = \emptyset$, then $A$ and $B$ are said to be **mutually exclusive**.
 
+#### Definition 1.3 Complement
+Let $A$ be an event defined on a sample space $S$. The **complement** of $A$, denoted by $A^C$, is the set of all elements in $S$ that are not in $A$; in other words, $A^C$ consists of all outcomes where $A$ does not occur.
 
-#### Definition 1.3 complement
+### Examples
+- In the earlier coin toss example, the event "at least one head appears" and the event "all tails" are mutually exclusive (they have no outcomes in common).
+- The complement of the event "an even number appears" (when rolling a die) is the event "an odd number appears".
 
 ### Recap
 - objective of models, deterministic moodel, probability model
