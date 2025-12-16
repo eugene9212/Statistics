@@ -19,6 +19,6 @@ Let's define some basic terminology:
 - Experiment: Flip a coin 3 times.
 - Sample space (S): {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}.
 If we are interested in the event "exactly 2 heads appear," then the event set (A) is {HHT, HTH, THH}.
-Alternatively, if we look at the number of heads that appear, the sample space becomes $S = {0, 1, 2, 3}$. For example, the event "at least one head appears" would be A = {1, 2, 3}.
+Alternatively, if we look at the number of heads that appear, the sample space becomes $S = \{0, 1, 2, 3\}$. For example, the event "at least one head appears" would be A = {1, 2, 3}.
 
 (2) 
