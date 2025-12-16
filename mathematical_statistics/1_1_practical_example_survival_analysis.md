@@ -10,7 +10,8 @@
 - **Assumption**: The machine has a constant hazard (failure rate) $\lambda > 0$
 
 ### 3. Probability density function (PDF)
-If $X \sim Exponential(\lambda)$, then 
+If $X \sim Exponential(\lambda)$, then \
+
 $$
 f(n)=\begin{cases}n/2 & n=2,4,6,\ldots \\3n+1 & n=1,3,5,\ldots \end{cases}
 $$
