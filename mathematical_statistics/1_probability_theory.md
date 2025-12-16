@@ -15,11 +15,15 @@ Let's define some basic terminology:
 - Event: any subset of the sample space.
 
 ### Examples
-(1)
-- Experiment: Flip a coin 3 times.
-- Sample space (S): $S = \\{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\\}$.
-If we are interested in the event "exactly 2 heads appear," then the event set (A) is $A = \\{HHT, HTH, THH\\}$.
-Alternatively, if we look at the number of heads that appear, the sample space becomes $S = \\{0, 1, 2, 3\\}$. For example, the event "at least one head appears" would be $A = \\{1, 2, 3\\}$.
+#### 
+- **Example 1 (Finite discrete sample space, Bernoulli trials):**
+  - Experiment: Flip a coin 3 times.
+  - Sample space ($S$): $S = \{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\}$.
+    - (This is the set of all possible ***ordered sequences*** of heads and tails for 3 tosses.)
+  - Event example ("exactly 2 heads appear"): $A = \{HHT, HTH, THH\}$.
+    - (A subset of $S$ determined by a condition.)
+  - If we define a random variable $X$ as "the number of heads appearing," then the sample space for $X$ becomes $S_X = \{0, 1, 2, 3\}$.
+  - Event example for $X$ ("at least one head appears"): $A_X = \{1, 2, 3\}$.
 
 (2) 
 - Experiment: Flip a coin until tail appeared.
@@ -32,6 +36,11 @@ Let's consider that you measure the lifespan of the machine. the observable numb
 - works over 20h event: $A = \\{x\vert x \geq 20\\\}$
 
 #### Definition 1.1
-- Event A, B are defined in the same sample space.
-- (1) intersection: event that A and B simultaneously included. $A\cap B$
-- (2) union: event that A or B included. $A\cup B$
+- Let $A$ and $B$ be events defined in the same sample space.
+- (1) Intersection: The event that both $A$ and $B$ occur, denoted by $A \cap B$.
+- (2) Union: The event that at least one of $A$ or $B$ occurs, denoted by $A \cup B$.
+
+#### Definition 1.2
+
+
+#### Definition 1.3
