@@ -9,6 +9,6 @@ There are many ways to define probability
     - 한계: 표본공간의 원소들이 무한개인 경우, 모두 같은 확률을 갖는다는 가정이 틀린경우
 - (20세기) relative frequency의 극한 사용 (가장 널리 받아들여지는 확률의 해석)
     - 
-    - <img src="./img/1_2_relative_freq.png" width=100>
+    - <img src="./img/1_2_relative_freq.png" width=700>
 - 주관적
 - 공리적 접근
