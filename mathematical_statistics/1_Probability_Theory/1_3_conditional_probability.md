@@ -1,3 +1,4 @@
+# Chapter 1. Probability Theory
 ## 1.3 Conditional Probabilitu
 - Now, when we want to find the probability $P(A)$ of an event $A$ occurring, we consider how the prior knowledge that event $B$ has occurred changes $P(A)$.
 - The definition of the conditional probability $P(A\vert B)$, that is, the probability of $A$ occurring given that $B$ has occurred, is as follows:
@@ -8,39 +9,38 @@ $$
 P(A\vert B) = frac{P(A\cap B)}{P(B)}
 $$
 
-B가 일어났다는 것을 알게 되면 $B^C$에 포함되는 실험결과들은 관찰이 불가능하므로 전체 표본공간은 $B$로 국한. 이떄 조건부 확률 $P(A\vert B)$는 $P(A\cap B)$의 새로운 표본공간의 확률, $P(B)$에 대한 상대적 크기를 의미.
+When we know that $B$ has occurred, any experimental outcomes contained in $B^C$ (the complement of $B$) are no longer possible to observe. Thus, the entire sample space is restricted to $B$. In this situation, the conditional probability $P(A\vert B)$ represents the probability of $A \cap B$ relative to the new sample space $B$; in other words, it describes how likely $A$ is, given that $B$ has already occurred, as a proportion of $P(B)$.
 
 #### Example
-두 개의 동전을 던졌을 때 표본공간 $S=\\{HH,HT,TH,TT\\}$는 4개의 원소로 구성. 각 원소는 동일한 확률 1/4. 이제 첫 번째 동전이 앞면(H)이라는 조건하에서 두 개의 동전이 모두 앞면(H)일 조건부 확률을 구해보자.
+When two coins are tossed, the sample space is $S=\\{HH, HT, TH, TT\\}$, consisting of 4 possible outcomes. Each outcome has an equal probability of 1/4. Now, let's find the conditional probability that both coins show heads (HH), given that the first coin shows heads (H).
 $$
 P(A\cap B\vert A) = \frac{P(A\cap B)}{P(A)}
 & = \frac{P{HH}}{P{HH,HT}}
 & = \frac{\frac{1}{4}}{\frac{1}{2}}
 $$
 
-다음으로, 조건부 확률로부터 유래하는 몇 개의 중요한 정리와 그에 따른 예들을 살펴보자.
+Next, let's look at some important theorems that follow from conditional probability, along with related examples.
 
 #### Definition 1.2 전확률 공식
-사건 $B_1, B_2, ..., B_k$는 상호 배반이며 $(B_i \cap B_j = \emptyset , i=j)$, $\bigcup_{i=1}^{k}B_i=S$라고 하자.
-이때 임의의 사건 $A$에 대해,
+Let $B_1, B_2, \dots, B_k$ be mutually exclusive events (i.e., $B_i \cap B_j = \emptyset$ for $i \neq j$) such that their union covers the entire sample space, $\bigcup_{i=1}^{k} B_i = S$. Then for any event $A$,
 $$
 P(A)=\sum_{i=1}^{k}P(B_i)P(A\vert B_i)
 $$
 
-다음의 정리 1.3은 베이지안 통계이론의 기초가 되는 베이즈 정리.
+The following theorem (1.3) is Bayes' theorem, which forms the foundation of Bayesian statistical theory.
 
-#### Definition 1.3 베이즈 정리
-사건 $B_1, B_2, ..., B_k$는 상호 배반이며 $(B_i \cap B_j = \emptyset , i=j)$, $\bigcup_{i=1}^{k}B_i=S$라고 하자.
-이때 사건 $A$가 일어났다는 조건하에서 사건 $B_j$가 일어날 확률은
+#### Definition 1.3 Bayes' Theorem
+Let $B_1, B_2, \dots, B_k$ be mutually exclusive events ($B_i \cap B_j = \emptyset$ for $i \ne j$) whose union covers the entire sample space, i.e., $\bigcup_{i=1}^{k} B_i = S$.
+Then, the probability that event $B_j$ occurs given that event $A$ has occurred is
 $$
 P(B_j\vert A) = \frac{P(B_j)P(A\vert B)}{\sum_{i=1}^{k}P(B_i)P(A\vert B)}
 $$
 
 #### Example
-어떤 질병 $A$에 대한 양성(+)과 음성(-)반응을 나타내는 검사방법이 있다. 이 검사방법이 실제로 질병이 있을 경우 양성 반응을 나타낼 확률이 $P(+\vert A)=0.95$이며
-질병이 없을 경우에 양성반응을 나타낼 확률이 $P(+\vert A^C)=0.10$이라고 한다.
-그런데 어떤 집단에서 무작위추출한 사람이 질병을 가지고 있을 확률은 $P(A)=0.01$이라고 한다.
-이제 어떤 사람이 검사반응에서 양성(+)을 나타냈을 때, 그 사람이 실제로 질병 $A$를 가졌을 확률 $P(A\vert +)$는 다음과 같다.
+Suppose there is a medical test for a disease $A$ that produces either a positive (+) or negative (–) result. The probability that the test yields a positive result when the person actually has the disease is $P(+\vert A)=0.95$.
+The probability that the test yields a positive result when the person does *not* have the disease is $P(+\vert A^C)=0.10$.
+Furthermore, suppose the probability that a randomly selected person from a certain population has the disease is $P(A)=0.01$.
+Now, if a person tests positive (+), the probability that this person actually has disease $A$, i.e. $P(A\vert +)$, is given as follows:
 $$
 P(A\vert +) = \frac{P(A \cap +)}{P(+)}
 & = \frac{P(+\vert A)P(A)}{P(+\vert A)P(A)+P(+\vert A^C)P(A^C)}
@@ -48,21 +48,22 @@ P(A\vert +) = \frac{P(A \cap +)}{P(+)}
 & = 0.088
 $$
 
-어떤 사건 $A$가 일어났다는 사실이 사건 $B$가 일어날 확률에 영향을 미치지 않는, 또는 반대인 경우를 생각해보자. 이를 확률을 사용하여 표현하면 $P(B\vert A)=P(B)$ 또는 $P(A\vert B)=P(A)$이 된다. 이런 성징릉 갖는 두 사건을 서로 **indepedent**라고 한다.
-이떄 $P(A\cap B)=P(B)P(A\vert B)$를 활용하면 독립사건 $A$와 $B$에 대해 아래와 같은 정의를 이끌어낼 수 있다.
+Let us now consider the case where the occurrence of event $A$ does not affect the probability of event $B$, or vice versa. In probability terms, this means $P(B\vert A) = P(B)$ or $P(A\vert B) = P(A)$. Two such events are said to be **independent**.
 
-#### Definition 1.5 Indenpendence
-두 사건 A와 B가
+Using the definition $P(A\cap B) = P(B)P(A\vert B)$, we can define independence as follows for events $A$ and $B$:
+
+#### Definition 1.5 Independence
+Events $A$ and $B$ are
 $$
  $P(A\cap B)=P(B)P(AB)$
 $$
-를 만족시키면 서로 **indepedent**라고 한다.
+If this condition is satisfied, the two events are said to be **independent**.
 
 
 ## 1.4 Combinatorics
-유한개의 원소로 이루어진 표본공간을 형성하는 실험들 중에 많은 경우 모든 가능한 원소가 발생할 확률이 동일하다고 가정할 수 있다.
-이런 경우 어떤 사건 A가 일어날 확률은, $n(A)$를 사건 $A$가 발생할 수 있는 경우의 수, 그리고 $N$을 모든 가능한 경우의 수라고 할때, $P(A)=n(A)/N$으로 정의하는 것이 타당.
-여기에서는 이러한 확률 계산에 도움이 되는 '경우의 수'계산의 근본이 되는 순열과 조합을 간략히 다룸.
+In many experiments that produce a finite sample space, it is reasonable to assume that all possible outcomes are equally likely. In such cases, the probability of an event $A$ can be defined as follows: If $n(A)$ is the number of ways event $A$ can occur, and $N$ is the total number of possible outcomes, then $P(A) = n(A)/N$.
 
-- multiplication rule: 사건 $A$가 일어나는 방법이 $m$가지이고 그 각각에 대해 사건 $B$가 일어나는 방법이 $n$가지이면, 사건 $A$와 $B$가 동시에 일어나는 방법은 $m\times n$가지 이다.
-- permutation: 서로 다른 $n$개의 원소 중에서 $r$개를 선택하여 순서있게 늘어놓는 것을 $n$개에서 $r$개 택한 permutation이라고 하며 늘어놓는 경우의 수를 $_{n}P_{r}$
+Here, we briefly review permutations and combinations—fundamental counting methods that facilitate such probability calculations.
+
+- Multiplication rule: If there are $m$ ways for event $A$ to occur, and for each of these there are $n$ ways for event $B$ to occur, then there are $m \times n$ ways for both $A$ and $B$ to occur together.
+- Permutation: Choosing $r$ elements from $n$ distinct objects and arranging them in order is called a permutation of $n$ objects taken $r$ at a time, and the number of such arrangements is denoted by $_{n}P_{r}$.
