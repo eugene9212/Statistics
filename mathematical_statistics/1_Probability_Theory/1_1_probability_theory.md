@@ -10,9 +10,9 @@ In contrast, there are some phenomena where the outcome depends on chance each t
 
 ### Terminology
 Let's define some basic terminology:
-- Experiment: a procedure carried out to observe the outcome of a certain phenomenon.
-- Sample space: the set of all possible outcomes of an experiment.
-- Event: any subset of the sample space.
+- Experiment: **a procedure** carried out to observe the outcome of a certain phenomenon.
+- Sample space: the set of **all possible outcomes** of an experiment.
+- Event: any **subset** of the sample space.
 
 ### Examples
 #### Example 1 (Finite discrete sample space, Bernoulli trials):
