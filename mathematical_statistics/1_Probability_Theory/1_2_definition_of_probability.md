@@ -29,7 +29,8 @@ $$
     - $N_n(A)$ = number of times event $A$ occurs
 
 - **Examples**
-<img src="../img/1_2_relative_freq.png" width=700>
+<img src="../img/1_2_relative_freq.png" width=500>
+
     - In the case of repeated independent tosses of a coin, the relative frequency of heads occurring is not a fixed constant: $m/n$ can be different in each new experiment. However, if as $n$ grows large, the relative frequency $m/n$ converges to $1/2$, then the probability of event $A$ (getting heads in a single toss) is defined as $P(A) = 1/2$ according to the relative frequency definition.
     - **Strengths** Empirical, Objective, Directly linked to observation
     - **Limitations**: Requires infinite trials (idealization), Cannot define probability of single events
@@ -52,13 +53,10 @@ $$
 - **Definition** Probability is a measure $P$ defined on a measurable space $(\Omega, \mathcal{F})$
 satisfying:
 
-1. $P(A) \ge 0$ for all $A \in \mathcal{F}$
-2. $P(\Omega) = 1$
-3. For disjoint events $A_i$:
+    1. $P(A) \ge 0$ for all $A \in \mathcal{F}$
+    2. $P(\Omega) = 1$
+    3. For disjoint events $A_i$: $P\left(\bigcup_i A_i\right) = \sum_i P(A_i)$
 
-$$
-P\left(\bigcup_i A_i\right) = \sum_i P(A_i)
-$$
 - **Strengths** Fully rigorous, Works for discrete and continuous spaces, Separates mathematics from interpretation
 - **Limitations** Abstract, Does not explain *what probability means*, only how it behaves
 - **Historical role** This is the **modern mathematical foundation** of probability theory.
