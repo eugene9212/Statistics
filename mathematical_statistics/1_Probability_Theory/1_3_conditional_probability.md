@@ -12,9 +12,9 @@
 ```markdown
 > **Definition**
 >
-> $$
-> P(A) = \frac{\text{number of favorable outcomes}}{\text{number of total outcomes}}
-> $$
+$$
+P(A) = \frac{\text{number of favorable outcomes}}{\text{number of total outcomes}}
+$$
 ```
 ## 1.4 Combinatorics
 
