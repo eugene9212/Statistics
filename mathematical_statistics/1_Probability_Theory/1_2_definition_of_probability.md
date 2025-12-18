@@ -1,18 +1,19 @@
-## Introduction
+# Chapter 1. Probability Theory
+## 1.2 Definition of Probability
 Here, we will examine **the meaning of probability for events** expressed as subsets of the sample space $S$.
 
 ### Canonical definitions of probability (historical order)
 #### 1. Classical (Laplace) definition — equally likely outcomes  
-    - **Definition**
-        - $$
-        P(A) = \frac{\text{number of favorable outcomes}}{\text{number of total outcomes}}
-        $$
-    - **Examples**
-        - $S=\\{HH,HT,TH,TT\\}$, 동전이 송정한 경우 표본공간에 속한 4개의 원소는 등확률로 일어난다고 가정하면,
-        - $P(A)=P(HT,TH)=2/4=1/2$
-    - **Strengths** Simple, Intuitive
-    - **Limitations**: Requires *equally likely* outcomes, Not applicable to continuous sample spaces
-    - **Historical role:** This is where probability *starts*, but it is **not foundational**.
+- **Definition**
+    - $$
+    P(A) = \frac{\text{number of favorable outcomes}}{\text{number of total outcomes}}
+    $$
+- **Examples**
+    - $S=\\{HH,HT,TH,TT\\}$, 동전이 송정한 경우 표본공간에 속한 4개의 원소는 등확률로 일어난다고 가정하면,
+    - $P(A)=P(HT,TH)=2/4=1/2$
+- **Strengths** Simple, Intuitive
+- **Limitations**: Requires *equally likely* outcomes, Not applicable to continuous sample spaces
+- **Historical role:** This is where probability *starts*, but it is **not foundational**.
 #### 2. (19th century) Relative frequency (Frequentist) definition (가장 널리 받아들여지는 확률의 해석)
     - When we perform an experiment once, either event $A$ occurs within the sample space $S$, or its complement $A^{c}$ occurs (that is, either $A$ happens or it doesn’t—one or the other). Now, suppose we repeat this experiment independently under identical conditions $n$ times, and let $m$ be the number of times that event $A$ occurs. The value of $m/n$ is not deterministic—it changes from experiment to experiment—but as the number of trials $n$ increases, it stabilizes. Therefore, under the assumption that the experiment can be repeated infinitely many times, we define the probability $P(A)$ of event $A$ as the limiting value of the relative frequency $m/n$ as $n$ becomes large.
     - **Definition**

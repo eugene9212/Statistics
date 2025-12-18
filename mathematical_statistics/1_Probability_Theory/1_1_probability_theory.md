@@ -1,4 +1,5 @@
-## 1.1 Introduction
+# Chapter 1. Probability Theory
+## 1.1 Probability Theory
 To describe a phenomenon(or characteristcs), we often use mathematical models to represent or predict it. 
 
 ### Deterministic model
@@ -12,15 +13,13 @@ In contrast, there are some phenomena where the outcome depends on chance each t
 Let's define some basic terminology:
 - Experiment: **a procedure** carried out to observe the outcome of a certain phenomenon.
 - Sample space: the set of **all possible outcomes** of an experiment.
-- Event: any **subset** of the sample space.
+- Event: any **subset** of the sample space.ㅑ
 
 ### Examples
 #### Example 1 (Finite discrete sample space, Bernoulli trials):
 - Experiment: Flip a coin 3 times.
 - Sample space ($S$): $S = \\{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\\}$.
-- (This is the set of all possible ordered sequences of heads and tails for 3 tosses.)
 - Event example ("exactly 2 heads appear"): $A = \\{HHT, HTH, THH\\}$.
-- (A subset of $S$ determined by a condition.)
 - If we define a random variable $X$ as "the number of heads appearing," then the sample space for $X$ becomes $S_X = \\{0, 1, 2, 3\\}$.
 - Event example for $X$ ("at least one head appears"): $A_X = \\{1, 2, 3\\}$.
 
