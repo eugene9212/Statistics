@@ -19,16 +19,17 @@ $$
 - When we perform an experiment once, either event $A$ occurs within the sample space $S$, or its complement $A^{c}$ occurs (that is, either $A$ happens or it doesn’t—one or the other). Now, suppose we repeat this experiment independently under identical conditions $n$ times, and let $m$ be the number of times that event $A$ occurs. The value of $m/n$ is not deterministic—it changes from experiment to experiment—but as the number of trials $n$ increases, it stabilizes. Therefore, under the assumption that the experiment can be repeated infinitely many times, we define the probability $P(A)$ of event $A$ as the limiting value of the relative frequency $m/n$ as $n$ becomes large.
 - **Definition**
     - Probability is defined as the long-run relative frequency of an event:
+
 $$
 P(A) = \lim_{n \to \infty} \frac{N_n(A)}{n}
 $$
 
-where:
-- $n$ = number of trials  
-- $N_n(A)$ = number of times event $A$ occurs
+- where:
+    - $n$ = number of trials  
+    - $N_n(A)$ = number of times event $A$ occurs
 
 - **Examples**
-<img src="./img/1_2_relative_freq.png" width=700>
+<img src="../img/1_2_relative_freq.png" width=700>
     - In the case of repeated independent tosses of a coin, the relative frequency of heads occurring is not a fixed constant: $m/n$ can be different in each new experiment. However, if as $n$ grows large, the relative frequency $m/n$ converges to $1/2$, then the probability of event $A$ (getting heads in a single toss) is defined as $P(A) = 1/2$ according to the relative frequency definition.
     - **Strengths** Empirical, Objective, Directly linked to observation
     - **Limitations**: Requires infinite trials (idealization), Cannot define probability of single events
@@ -36,6 +37,7 @@ where:
 
 #### 3. (18–20th century, formalized later) Subjective (Bayesian) probability  
 - **Definition** Probability is a degree of belief held by a rational agent, given information:
+
 $$
 P(A \mid I)
 $$
@@ -66,34 +68,9 @@ $$
 
 Let $(\Omega, \mathcal{F}, P)$ be a probability space.
 
-- **Probability of the empty set**
-
-  $$
-  P(\varnothing) = 0
-  $$
-
-- **Complement rule**
-
-  For any event $A \subset \Omega$,
-
-  $$
-  P(A^c) = 1 - P(A)
-  $$
-
-- **Monotonicity**
-
-  If $A \subset B$, then
-
-  $$
-  P(A) \le P(B)
-  $$
-
-- **Inclusion–exclusion (two events)**
-
-  For any events $A$ and $B$,
-
-  $$
-  P(A \cup B) = P(A) + P(B) - P(A \cap B)
-  $$
+- **Probability of the empty set** $P(\varnothing) = 0$
+- **Complement rule** For any event $A \subset \Omega$, $P(A^c) = 1 - P(A)$
+- **Monotonicity** If $A \subset B$, then $P(A) \le P(B)$
+- **Inclusion–exclusion (two events)** For any events $A$ and $B$, $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 These are elementary properties (immediate consequences) of Kolmogorov’s axioms.
