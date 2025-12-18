@@ -5,16 +5,17 @@ Here, we will examine **the meaning of probability for events** expressed as sub
 ### Canonical definitions of probability (historical order)
 #### 1. Classical (Laplace) definition — equally likely outcomes  
 - **Definition**
+
 $$
 P(A) = \frac{\text{number of favorable outcomes}}{\text{number of total outcomes}}
 $$
 - **Examples**
-    - $S=\\{HH,HT,TH,TT\\}$, 동전이 송정한 경우 표본공간에 속한 4개의 원소는 등확률로 일어난다고 가정하면,
+    - $S=\\{HH, HT, TH, TT\\}$. If we assume the coin is fair, then the 4 elements in the sample space each occur with equal probability,
     - $P(A)=P(HT,TH)=2/4=1/2$
 - **Strengths** Simple, Intuitive
 - **Limitations**: Requires *equally likely* outcomes, Not applicable to continuous sample spaces
 - **Historical role:** This is where probability *starts*, but it is **not foundational**.
-#### 2. (19th century) Relative frequency (Frequentist) definition (가장 널리 받아들여지는 확률의 해석)
+#### 2. (19th century) Relative frequency (Frequentist) definition (the most widely accepted interpretation of probability)
 - When we perform an experiment once, either event $A$ occurs within the sample space $S$, or its complement $A^{c}$ occurs (that is, either $A$ happens or it doesn’t—one or the other). Now, suppose we repeat this experiment independently under identical conditions $n$ times, and let $m$ be the number of times that event $A$ occurs. The value of $m/n$ is not deterministic—it changes from experiment to experiment—but as the number of trials $n$ increases, it stabilizes. Therefore, under the assumption that the experiment can be repeated infinitely many times, we define the probability $P(A)$ of event $A$ as the limiting value of the relative frequency $m/n$ as $n$ becomes large.
 - **Definition**
     - Probability is defined as the long-run relative frequency of an event:
