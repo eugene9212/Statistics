@@ -29,11 +29,11 @@ $$
     - $N_n(A)$ = number of times event $A$ occurs
 
 - **Examples**
-    - <img src="../img/1_2_relative_freq.png" width=500>
     - In the case of repeated independent tosses of a coin, the relative frequency of heads occurring is not a fixed constant: $m/n$ can be different in each new experiment. However, if as $n$ grows large, the relative frequency $m/n$ converges to $1/2$, then the probability of event $A$ (getting heads in a single toss) is defined as $P(A) = 1/2$ according to the relative frequency definition.
     - **Strengths** Empirical, Objective, Directly linked to observation
     - **Limitations**: Requires infinite trials (idealization), Cannot define probability of single events
     - **Historical role:** This definition dominates **classical statistics and empirical sciences**.
+    - <img src="../img/1_2_relative_freq.png" width=500>
 
 #### 3. (18–20th century, formalized later) Subjective (Bayesian) probability  
 - **Definition** Probability is a degree of belief held by a rational agent, given information:
