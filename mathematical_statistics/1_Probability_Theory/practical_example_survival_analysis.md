@@ -10,18 +10,21 @@
 - **Assumption**: The machine has a **constant hazard (failure rate) $\lambda > 0$**
 
 ### 3. Probability density function (PDF)
-If $X \sim Exponential(\lambda)$, then \
+If $X \sim Exponential(\lambda)$, then
 
 $$
-f(n)=\begin{cases}\lambda e^{\lambda x} & x \lge 0 \\0 & x<0> \end{cases}
+f(n)=\begin{cases}\lambda e^{\lambda x} & x \lge 0 \\ 0 & x<0> \end{cases}
 $$
 
 ### 4. Cumulative distribution function (CDF)
 The CDF gives:
+
 $$
 F_X(x) = P(X \leq x)
 $$
+
 For the exponential distribution:
+
 $$
 F_X(x)=\begin{cases}1-e^(-\lambda x), & x\geq 0 \\ 0, & x<0  \end{cases}
 $$
